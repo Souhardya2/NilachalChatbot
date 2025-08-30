@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nilachal Polytechnic Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="topbar">
+      <div class="brand">
+        <img src="NP-logo.jpg"
+             alt="logo" class="logo"/>
+        <div class="title-group">
+          <h1>Nilachal Polytechnic Chatbot</h1>
+          <p class="subtitle">Get quick answers about Nilachal Polytechnic — courses, admission, placements & more</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="chat-layout">
+      <section class="left-panel">
+        <div class="info-card">
+          <h2>Quick Info</h2>
+          <p><strong>Address:</strong> Near Plot No-540/1780, Nilachal Nagar, Shikhar Chandi Rd, Patharagadia, Bhubaneswar, Odisha 751024</p>
+          <p><strong>Phone:</strong> 094370 37989</p>
+          <p><strong>Website:</strong> <a href="https://www.nilachalpolytechnic.ac.in" target="_blank" rel="noopener">nilachalpolytechnic.ac.in</a></p>
+          <p><strong>Founded:</strong> 1997 &nbsp;|&nbsp; <strong>Enrollment (2025):</strong> 768</p>
+        </div>
+
+        <div class="faq-list">
+          <h3>FAQs (click to ask)</h3>
+          <div class="faq-buttons">
+            <button onclick="quickAsk('about nilachal polytechnic')">About</button>
+            <button onclick="quickAsk('location')">Location</button>
+            <button onclick="quickAsk('founded')">Founded</button>
+            <button onclick="quickAsk('enrollment')">Enrollment</button>
+            <button onclick="quickAsk('courses')">Courses</button>
+            <button onclick="quickAsk('admission')">Admission</button>
+            <button onclick="quickAsk('eligibility')">Eligibility</button>
+            <button onclick="quickAsk('affiliation')">Affiliation</button>
+            <button onclick="quickAsk('library')">Library</button>
+            <button onclick="quickAsk('hostel')">Hostel</button>
+            <button onclick="quickAsk('placement')">Placements</button>
+            <button onclick="quickAsk('highest package')">Highest Package</button>
+            <button onclick="quickAsk('average package')">Average Package</button>
+            <button onclick="quickAsk('companies')">Top Companies</button>
+            <button onclick="quickAsk('facilities')">Facilities</button>
+            <button onclick="quickAsk('sports')">Sports</button>
+            <button onclick="quickAsk('festivals')">Fests</button>
+            <button onclick="quickAsk('faculty')">Faculty</button>
+            <button onclick="quickAsk('labs')">Labs</button>
+            <button onclick="quickAsk('workshops')">Workshops</button>
+            <button onclick="quickAsk('training')">Training</button>
+            <button onclick="quickAsk('contact')">Contact</button>
+            <button onclick="quickAsk('hours')">Hours</button>
+            <button onclick="quickAsk('website')">Website</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="chat-panel">
+        <div class="chat-container">
+          <div class="chat-header">Ask about Nilachal Polytechnic</div>
+          <div class="chat-box" id="chatBox" aria-live="polite"></div>
+
+          <div class="chat-input-area">
+            <input id="userInput" type="text" autocomplete="off" placeholder="Type a question (or click an FAQ)..."/>
+            <button id="sendBtn" onclick="sendMessage()" aria-label="Send">Send</button>
+          </div>
+
+          <div class="helper-note">
+            Tip: Use keywords like "placements", "courses", "hostel" or click a FAQ button.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <small>© Nilachal Polytechnic — Chatbot demo · Data shown is for informational/demo use.</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
